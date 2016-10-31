@@ -1,5 +1,3 @@
-#
-# Full discussion:
 # https://marcobonzanini.wordpress.com/2015/01/19/sentiment-analysis-with-python-and-scikit-learn
 
 import sys
@@ -37,6 +35,7 @@ if 1:
     train_vectors = vectorizer.fit_transform(train_data)
     test_vectors = vectorizer.transform(test_data)
     '''
+    precision ~ 8%
     # Perform classification with SVM, kernel=rbf
     classifier_rbf = svm.SVC()
     t0 = time.time()
@@ -47,7 +46,7 @@ if 1:
     time_rbf_train = t1-t0
     time_rbf_predict = t2-t1
     '''
-
+    #~12%
     # Perform classification with SVM, kernel=linear
     classifier_linear = svm.SVC(kernel='linear')
     t0 = time.time()
@@ -58,6 +57,7 @@ if 1:
     time_linear_train = t1-t0
     time_linear_predict = t2-t1
     '''
+    ~9%
     # Perform classification with SVM, kernel=linear
     classifier_liblinear = svm.LinearSVC()
     t0 = time.time()
