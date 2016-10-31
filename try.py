@@ -83,4 +83,4 @@ if __name__ == '__main__':
     print(classification_report(test_labels, prediction_linear))
     print("Results for LinearSVC()")
     print("Training time: %fs; Prediction time: %fs" % (time_liblinear_train, time_liblinear_predict))
-print(classification_report(test_labels, prediction_liblinear))
+    print(classification_report(test_labels, prediction_liblinear))
