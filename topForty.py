@@ -1,7 +1,7 @@
 import os
 import operator
 
-csv = open("/home/srishti/blogs.csv","r")
+csv = open("/home/srishti/blogs.csv","r")#PATH
 moods = {}
 blog = csv.readline()
 i = 0
@@ -27,11 +27,11 @@ for i in range(0,40):
 	iter[x[i][0]] = 0
 	topMoods.append(x[i][0])
 
-path = "/home/srishti/trainData500/"
+path = "/home/srishti/trainData500/"#PATH WHERE BLOG FILES ARE TO BE SAVED
 if not os.path.exists(path):
 	os.mkdir(path)
 		
-csv = open("/home/srishti/blogs.csv","r")
+csv = open("/home/srishti/blogs.csv","r")#PATH WHERE CSV IS STORED
 blog = csv.readline()
 
 while(blog != ''):
@@ -41,7 +41,7 @@ while(blog != ''):
 		continue
 	if(len(blog[0]) != 0):
 		moodName = blog[1]
-		if top.get(blog[1],0) > 0 and iter[moodName] < 4000:
+		if top.get(blog[1],0) > 0 and iter[moodName] < 400: #DEFINES A BOUND ON THE NUMBER OF POSTS ASSOCIATED WITH A MOOD
 			if not os.path.exists(path + moodName[:(len(moodName) - 1)] + "/"):
 				os.mkdir(path + moodName[:(len(moodName) - 1)] + "/")
 			f = open(path + moodName[:(len(moodName) - 1)] + "/" + str(iter[blog[1]]) + ".txt", "w")
@@ -53,4 +53,4 @@ for i in topMoods:
 	print(str(top[i]) + " blogs found for mood " + i)
 
 for i in topMoods:
-	print "\"" + i[:(len(i) - 1)] + "\",",
+	print "\"" + i[:(len(i) - 1)] + "\",",#PRINT TO ALLOW COPYING INTO "CLASSES" FIELD OF CLASSIFY
