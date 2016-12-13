@@ -1,0 +1,349 @@
+TfidfVectorizer
+LinearSVC()
+min_df=5, max_df = 0.8, sublinear_tf=True, use_idf=True
+
+------------------------Samples=500---------------------------------------
+ngram_range=(1,1)
+python bipolarClassification.py 
+Results for LinearSVC()
+Training time: 0.039426s; Prediction time: 0.000637s
+             precision    recall  f1-score   support
+
+        neg       0.70      0.76      0.73        50
+        pos       0.74      0.68      0.71        50
+
+avg / total       0.72      0.72      0.72       100
+
+ngram_range=(1,2)
+python bipolarClassification.py 
+Results for LinearSVC()
+Training time: 0.098179s; Prediction time: 0.000880s
+             precision    recall  f1-score   support
+
+        neg       0.71      0.78      0.74        50
+        pos       0.76      0.68      0.72        50
+
+avg / total       0.73      0.73      0.73       100
+
+ngram_range=(1,3)
+python bipolarClassification.py 
+Results for LinearSVC()
+Training time: 0.090935s; Prediction time: 0.000967s
+             precision    recall  f1-score   support
+
+        neg       0.69      0.76      0.72        50
+        pos       0.73      0.66      0.69        50
+
+avg / total       0.71      0.71      0.71       100
+
+ngram_range=(1,4)
+python bipolarClassification.py 
+Results for LinearSVC()
+Training time: 0.085130s; Prediction time: 0.000444s
+             precision    recall  f1-score   support
+
+        neg       0.69      0.76      0.72        50
+        pos       0.73      0.66      0.69        50
+
+avg / total       0.71      0.71      0.71       100
+
+
+------------------------Samples=1000---------------------------------------
+ngram_range=(1,1)
+python bipolarClassification.py
+Results for LinearSVC()
+Training time: 0.078618s; Prediction time: 0.000421s
+             precision    recall  f1-score   support
+
+        neg       0.72      0.68      0.70       100
+        pos       0.70      0.73      0.71       100
+
+avg / total       0.71      0.70      0.70       200
+ngram_range=(1,2)
+python bipolarClassification.py 
+Results for LinearSVC()
+Training time: 0.173579s; Prediction time: 0.000569s
+             precision    recall  f1-score   support
+
+        neg       0.72      0.73      0.73       100
+        pos       0.73      0.72      0.72       100
+
+avg / total       0.73      0.72      0.72       200
+ngram_range=(1,3)
+python bipolarClassification.py 
+Results for LinearSVC()
+Training time: 0.174769s; Prediction time: 0.000653s
+             precision    recall  f1-score   support
+
+        neg       0.71      0.70      0.71       100
+        pos       0.71      0.72      0.71       100
+
+avg / total       0.71      0.71      0.71       200
+ngram_range=(1,4)
+python bipolarClassification.py 
+Results for LinearSVC()
+Training time: 0.179757s; Prediction time: 0.000803s
+             precision    recall  f1-score   support
+
+        neg       0.72      0.68      0.70       100
+        pos       0.70      0.74      0.72       100
+
+avg / total       0.71      0.71      0.71       200
+
+
+------------------------Samples=2000---------------------------------------
+ngram_range=(1,1)
+python bipolarClassification.py 
+Results for LinearSVC()
+Training time: 0.220566s; Prediction time: 0.000620s
+             precision    recall  f1-score   support
+
+        neg       0.67      0.65      0.66       200
+        pos       0.66      0.68      0.67       200
+
+avg / total       0.66      0.66      0.66       400
+ngram_range=(1,2)
+python bipolarClassification.py 
+Results for LinearSVC()
+Training time: 0.425955s; Prediction time: 0.001671s
+             precision    recall  f1-score   support
+
+        neg       0.63      0.66      0.64       200
+        pos       0.64      0.61      0.63       200
+
+avg / total       0.64      0.64      0.63       400
+ngram_range=(1,3)
+python bipolarClassification.py 
+Results for LinearSVC()
+Training time: 0.399702s; Prediction time: 0.001019s
+             precision    recall  f1-score   support
+
+        neg       0.64      0.66      0.65       200
+        pos       0.64      0.62      0.63       200
+
+avg / total       0.64      0.64      0.64       400
+ngram_range=(1,4)
+python bipolarClassification.py 
+Results for LinearSVC()
+Training time: 0.424551s; Prediction time: 0.001419s
+             precision    recall  f1-score   support
+
+        neg       0.65      0.66      0.65       200
+        pos       0.65      0.64      0.65       200
+
+avg / total       0.65      0.65      0.65       400
+
+
+------------------------Samples=5000---------------------------------------
+ngram_range=(1,1)
+python bipolarClassification.py 
+Results for LinearSVC()
+Training time: 0.575450s; Prediction time: 0.001063s
+             precision    recall  f1-score   support
+
+        neg       0.65      0.64      0.65       500
+        pos       0.65      0.65      0.65       500
+
+avg / total       0.65      0.65      0.65      1000
+ngram_range=(1,2)
+python bipolarClassification.py 
+Results for LinearSVC()
+Training time: 1.246371s; Prediction time: 0.002196s
+             precision    recall  f1-score   support
+
+        neg       0.65      0.62      0.64       500
+        pos       0.64      0.67      0.66       500
+
+avg / total       0.65      0.65      0.65      1000
+ngram_range=(1,3)
+python bipolarClassification.py 
+Results for LinearSVC()
+Training time: 1.137170s; Prediction time: 0.002464s
+             precision    recall  f1-score   support
+
+        neg       0.65      0.63      0.64       500
+        pos       0.64      0.67      0.65       500
+
+avg / total       0.65      0.65      0.65      1000
+ngram_range=(1,4)
+python bipolarClassification.py 
+Results for LinearSVC()
+Training time: 1.702038s; Prediction time: 0.003305s
+             precision    recall  f1-score   support
+
+        neg       0.65      0.63      0.64       500
+        pos       0.64      0.67      0.65       500
+
+avg / total       0.65      0.65      0.65      1000
+
+
+------------------------Samples=10000---------------------------------------
+ngram_range=(1,1)
+python bipolarClassification.py 
+Results for LinearSVC()
+Training time: 1.281183s; Prediction time: 0.002457s
+             precision    recall  f1-score   support
+
+        neg       0.63      0.59      0.61      1000
+        pos       0.62      0.66      0.64      1000
+
+avg / total       0.63      0.62      0.62      2000
+ngram_range=(1,2)
+python bipolarClassification.py 
+Results for LinearSVC()
+Training time: 3.211930s; Prediction time: 0.006902s
+             precision    recall  f1-score   support
+
+        neg       0.63      0.60      0.61      1000
+        pos       0.62      0.65      0.63      1000
+
+avg / total       0.62      0.62      0.62      2000
+ngram_range=(1,3)
+python bipolarClassification.py 
+Results for LinearSVC()
+Training time: 3.315926s; Prediction time: 0.005179s
+             precision    recall  f1-score   support
+
+        neg       0.64      0.61      0.62      1000
+        pos       0.63      0.65      0.64      1000
+
+avg / total       0.63      0.63      0.63      2000
+ngram_range=(1,4)
+python bipolarClassification.py 
+Results for LinearSVC()
+Training time: 4.039568s; Prediction time: 0.005241s
+             precision    recall  f1-score   support
+
+        neg       0.64      0.61      0.62      1000
+        pos       0.63      0.65      0.64      1000
+
+avg / total       0.63      0.63      0.63      2000
+
+
+------------------------Samples=15000---------------------------------------
+ngram_range=(1,1)
+python bipolarClassification.py 
+Results for LinearSVC()
+Training time: 1.995568s; Prediction time: 0.002376s
+             precision    recall  f1-score   support
+
+        neg       0.63      0.57      0.60      1500
+        pos       0.61      0.66      0.63      1500
+
+avg / total       0.62      0.62      0.62      3000
+ngram_range=(1,2)
+python bipolarClassification.py 
+Results for LinearSVC()
+Training time: 5.973430s; Prediction time: 0.007872s
+             precision    recall  f1-score   support
+
+        neg       0.62      0.59      0.61      1500
+        pos       0.61      0.64      0.63      1500
+
+avg / total       0.62      0.62      0.62      3000
+ngram_range=(1,3)
+python bipolarClassification.py 
+Results for LinearSVC()
+Training time: 9.707236s; Prediction time: 0.014142s
+             precision    recall  f1-score   support
+
+        neg       0.63      0.60      0.62      1500
+        pos       0.62      0.65      0.63      1500
+
+avg / total       0.63      0.63      0.63      3000
+
+
+------------------------Samples=20000---------------------------------------
+ngram_range=(1,1)
+python bipolarClassification.py 
+Results for LinearSVC()
+Training time: 2.178129s; Prediction time: 0.002852s
+             precision    recall  f1-score   support
+
+        neg       0.63      0.58      0.60      2000
+        pos       0.61      0.66      0.63      2000
+
+avg / total       0.62      0.62      0.62      4000
+ngram_range=(1,2)
+python bipolarClassification.py 
+Results for LinearSVC()
+Training time: 9.474082s; Prediction time: 0.012185s
+             precision    recall  f1-score   support
+
+        neg       0.63      0.60      0.61      2000
+        pos       0.62      0.64      0.63      2000
+
+avg / total       0.62      0.62      0.62      4000
+ngram_range=(1,3)
+python bipolarClassification.py 
+Results for LinearSVC()
+Training time: 10.751363s; Prediction time: 0.013600s
+             precision    recall  f1-score   support
+
+        neg       0.63      0.60      0.62      2000
+        pos       0.62      0.64      0.63      2000
+
+avg / total       0.62      0.62      0.62      4000
+
+
+
+------------------------Samples=25000---------------------------------------
+ngram_range=(1,1)
+python bipolarClassification.py 
+Results for LinearSVC()
+Training time: 2.816484s; Prediction time: 0.003406s
+             precision    recall  f1-score   support
+
+        neg       0.63      0.59      0.61      2500
+        pos       0.61      0.65      0.63      2500
+
+avg / total       0.62      0.62      0.62      5000
+
+------------------------Samples=30000---------------------------------------
+ngram_range=(1,1)
+python bipolarClassification.py 
+Results for LinearSVC()
+Training time: 4.909345s; Prediction time: 0.012558s
+             precision    recall  f1-score   support
+
+        neg       0.62      0.58      0.60      3000
+        pos       0.61      0.65      0.63      3000
+
+avg / total       0.62      0.62      0.61      6000
+
+------------------------Samples=35000---------------------------------------
+ngram_range=(1,1)
+python bipolarClassification.py 
+Results for LinearSVC()
+Training time: 4.835740s; Prediction time: 0.004697s
+             precision    recall  f1-score   support
+
+        neg       0.62      0.59      0.60      3500
+        pos       0.61      0.64      0.62      3500
+
+avg / total       0.62      0.61      0.61      7000
+
+------------------------Samples=40000---------------------------------------
+ngram_range=(1,1)
+python bipolarClassification.py 
+Results for LinearSVC()
+Training time: 6.993911s; Prediction time: 0.005995s
+             precision    recall  f1-score   support
+
+        neg       0.61      0.59      0.60      4000
+        pos       0.60      0.62      0.61      4000
+
+avg / total       0.60      0.60      0.60      8000
+
+------------------------Samples=50000---------------------------------------
+ngram_range=(1,1)
+python bipolarClassification.py 
+Results for LinearSVC()
+Training time: 8.915691s; Prediction time: 0.009132s
+             precision    recall  f1-score   support
+
+        neg       0.61      0.58      0.60      5000
+        pos       0.60      0.62      0.61      5000
+
+avg / total       0.60      0.60      0.60     10000
+

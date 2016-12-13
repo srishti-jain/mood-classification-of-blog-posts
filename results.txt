@@ -1,0 +1,1399 @@
+python topForty.py 
+Sorted, number of moods = 52680
+24460 blogs found for mood amused
+
+20133 blogs found for mood tired
+
+16319 blogs found for mood happy
+
+12888 blogs found for mood cheerful
+
+12653 blogs found for mood bored
+
+12067 blogs found for mood accomplished
+
+11442 blogs found for mood sleepy
+
+11105 blogs found for mood content
+
+10995 blogs found for mood excited
+
+10687 blogs found for mood contemplative
+
+10643 blogs found for mood blah
+
+10010 blogs found for mood awake
+
+9960 blogs found for mood calm
+
+9954 blogs found for mood bouncy
+
+9461 blogs found for mood chipper
+
+8222 blogs found for mood annoyed
+
+8114 blogs found for mood confused
+
+7895 blogs found for mood busy
+
+7796 blogs found for mood sick
+
+7015 blogs found for mood anxious
+
+6899 blogs found for mood exhausted
+
+6375 blogs found for mood crazy
+
+6351 blogs found for mood depressed
+
+6288 blogs found for mood curious
+
+6218 blogs found for mood drained
+
+6078 blogs found for mood sad
+
+5939 blogs found for mood ecstatic
+
+5925 blogs found for mood aggravated
+
+5871 blogs found for mood blank
+
+5726 blogs found for mood okay
+
+5605 blogs found for mood hungry
+
+5427 blogs found for mood cold
+
+5372 blogs found for mood creative
+
+5286 blogs found for mood hopeful
+
+4992 blogs found for mood good
+
+4938 blogs found for mood pissed off
+
+4496 blogs found for mood thoughtful
+
+4330 blogs found for mood frustrated
+
+4168 blogs found for mood cranky
+
+4003 blogs found for mood loved
+
+"amused", "tired", "happy", "cheerful", "bored", "accomplished", "sleepy", "content", "excited", "contemplative", "blah", "awake", "calm", "bouncy", "chipper", "annoyed", "confused", "busy", "sick", "anxious", "exhausted", "crazy", "depressed", "curious", "drained", "sad", "ecstatic", "aggravated", "blank", "okay", "hungry", "cold", "creative", "hopeful", "good", "pissed off", "thoughtful", "frustrated", "cranky", "loved",
+
+
+
+vectorizer = TfidfVectorizer(min_df=1, max_df = 0.9, sublinear_tf=True, use_idf=True)
+
+
+Samples = 100
+python classifyBlogs.py 
+Results for SVC(kernel=rbf)
+Training time: 27.733561s; Prediction time: 2.392410s
+/home/srishti/.local/lib/python2.7/site-packages/sklearn/metrics/classification.py:1113: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples.
+  'precision', 'predicted', average, warn_for)
+               precision    recall  f1-score   support
+
+ accomplished       0.00      0.00      0.00        11
+   aggravated       0.00      0.00      0.00        11
+       amused       0.00      0.00      0.00        11
+      annoyed       0.14      0.09      0.11        11
+      anxious       0.00      0.00      0.00        11
+        awake       0.13      0.18      0.15        11
+         blah       0.08      0.09      0.08        11
+        blank       0.00      0.00      0.00        11
+        bored       0.00      0.00      0.00        11
+       bouncy       0.00      0.00      0.00        11
+         busy       0.67      0.18      0.29        11
+         calm       0.00      0.00      0.00        11
+     cheerful       0.04      0.09      0.05        11
+      chipper       0.00      0.00      0.00        11
+         cold       0.00      0.00      0.00        11
+     confused       0.18      0.27      0.21        11
+contemplative       0.00      0.00      0.00        11
+      content       0.12      0.36      0.18        11
+       cranky       0.12      0.09      0.11        11
+        crazy       0.00      0.00      0.00        11
+     creative       0.14      0.18      0.16        11
+      curious       0.09      0.09      0.09        11
+    depressed       0.00      0.00      0.00        11
+      drained       0.09      0.09      0.09        11
+     ecstatic       0.20      0.09      0.13        11
+      excited       0.00      0.00      0.00        11
+    exhausted       0.00      0.00      0.00        11
+   frustrated       0.13      0.18      0.15        11
+         good       0.10      0.18      0.12        11
+        happy       0.00      0.00      0.00        11
+      hopeful       0.06      0.09      0.07        11
+       hungry       0.00      0.00      0.00        11
+        loved       0.50      0.27      0.35        11
+         okay       1.00      0.09      0.17        11
+   pissed off       0.00      0.00      0.00        11
+          sad       0.00      0.00      0.00        11
+         sick       1.00      0.09      0.17        11
+       sleepy       0.17      0.09      0.12        11
+   thoughtful       0.00      0.00      0.00        11
+        tired       0.00      0.00      0.00        11
+
+  avg / total       0.12      0.07      0.07       440
+
+Results for SVC(kernel=linear)
+Training time: 26.689364s; Prediction time: 2.113380s
+               precision    recall  f1-score   support
+
+ accomplished       0.70      0.64      0.67        11
+   aggravated       0.17      0.09      0.12        11
+       amused       0.00      0.00      0.00        11
+      annoyed       0.17      0.09      0.12        11
+      anxious       0.00      0.00      0.00        11
+        awake       0.17      0.09      0.12        11
+         blah       0.00      0.00      0.00        11
+        blank       0.00      0.00      0.00        11
+        bored       0.06      0.09      0.07        11
+       bouncy       0.00      0.00      0.00        11
+         busy       0.17      0.18      0.17        11
+         calm       0.09      0.09      0.09        11
+     cheerful       0.00      0.00      0.00        11
+      chipper       0.00      0.00      0.00        11
+         cold       0.00      0.00      0.00        11
+     confused       0.15      0.18      0.17        11
+contemplative       0.00      0.00      0.00        11
+      content       0.08      0.18      0.11        11
+       cranky       0.17      0.09      0.12        11
+        crazy       0.00      0.00      0.00        11
+     creative       0.20      0.27      0.23        11
+      curious       0.12      0.09      0.11        11
+    depressed       0.15      0.27      0.19        11
+      drained       0.08      0.09      0.08        11
+     ecstatic       0.08      0.09      0.08        11
+      excited       0.00      0.00      0.00        11
+    exhausted       0.10      0.09      0.10        11
+   frustrated       0.22      0.18      0.20        11
+         good       0.00      0.00      0.00        11
+        happy       0.00      0.00      0.00        11
+      hopeful       0.18      0.18      0.18        11
+       hungry       0.00      0.00      0.00        11
+        loved       0.21      0.27      0.24        11
+         okay       0.25      0.09      0.13        11
+   pissed off       0.11      0.09      0.10        11
+          sad       0.00      0.00      0.00        11
+         sick       0.50      0.27      0.35        11
+       sleepy       0.29      0.18      0.22        11
+   thoughtful       0.03      0.09      0.05        11
+        tired       0.00      0.00      0.00        11
+
+  avg / total       0.11      0.10      0.10       440
+
+Results for LinearSVC()
+Training time: 5.481601s; Prediction time: 0.010336s
+               precision    recall  f1-score   support
+
+ accomplished       0.60      0.82      0.69        11
+   aggravated       0.08      0.09      0.09        11
+       amused       0.25      0.18      0.21        11
+      annoyed       0.11      0.09      0.10        11
+      anxious       0.00      0.00      0.00        11
+        awake       0.20      0.09      0.13        11
+         blah       0.00      0.00      0.00        11
+        blank       0.00      0.00      0.00        11
+        bored       0.00      0.00      0.00        11
+       bouncy       0.08      0.09      0.08        11
+         busy       0.08      0.09      0.09        11
+         calm       0.10      0.09      0.10        11
+     cheerful       0.00      0.00      0.00        11
+      chipper       0.00      0.00      0.00        11
+         cold       0.00      0.00      0.00        11
+     confused       0.08      0.09      0.08        11
+contemplative       0.00      0.00      0.00        11
+      content       0.12      0.09      0.11        11
+       cranky       0.12      0.09      0.11        11
+        crazy       0.00      0.00      0.00        11
+     creative       0.31      0.36      0.33        11
+      curious       0.17      0.09      0.12        11
+    depressed       0.06      0.09      0.07        11
+      drained       0.00      0.00      0.00        11
+     ecstatic       0.00      0.00      0.00        11
+      excited       0.00      0.00      0.00        11
+    exhausted       0.10      0.09      0.10        11
+   frustrated       0.09      0.09      0.09        11
+         good       0.00      0.00      0.00        11
+        happy       0.08      0.09      0.08        11
+      hopeful       0.00      0.00      0.00        11
+       hungry       0.00      0.00      0.00        11
+        loved       0.16      0.27      0.20        11
+         okay       0.08      0.09      0.08        11
+   pissed off       0.00      0.00      0.00        11
+          sad       0.12      0.18      0.14        11
+         sick       0.31      0.36      0.33        11
+       sleepy       0.08      0.09      0.08        11
+   thoughtful       0.07      0.09      0.08        11
+        tired       0.00      0.00      0.00        11
+
+  avg / total       0.09      0.09      0.09       440
+
+
+
+
+Samples = 500
+python classifyBlogs.py 
+Results for SVC(kernel=rbf)
+Training time: 864.596038s; Prediction time: 11.489978s
+/home/srishti/.local/lib/python2.7/site-packages/sklearn/metrics/classification.py:1113: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples.
+  'precision', 'predicted', average, warn_for)
+               precision    recall  f1-score   support
+
+ accomplished       0.00      0.00      0.00        11
+   aggravated       0.00      0.00      0.00        11
+       amused       0.07      0.45      0.11        11
+      annoyed       0.13      0.18      0.15        11
+      anxious       0.00      0.00      0.00        11
+        awake       0.00      0.00      0.00        11
+         blah       0.00      0.00      0.00        11
+        blank       0.00      0.00      0.00        11
+        bored       0.00      0.00      0.00        11
+       bouncy       0.03      0.09      0.05        11
+         busy       0.13      0.18      0.15        11
+         calm       0.00      0.00      0.00        11
+     cheerful       0.00      0.00      0.00        11
+      chipper       0.00      0.00      0.00        11
+         cold       0.00      0.00      0.00        11
+     confused       0.50      0.18      0.27        11
+contemplative       0.08      0.18      0.11        11
+      content       0.07      0.27      0.11        11
+       cranky       0.00      0.00      0.00        11
+        crazy       0.00      0.00      0.00        11
+     creative       0.50      0.09      0.15        11
+      curious       0.10      0.09      0.10        11
+    depressed       0.17      0.09      0.12        11
+      drained       0.18      0.27      0.21        11
+     ecstatic       0.06      0.09      0.07        11
+      excited       0.00      0.00      0.00        11
+    exhausted       0.00      0.00      0.00        11
+   frustrated       0.12      0.09      0.11        11
+         good       0.00      0.00      0.00        11
+        happy       0.00      0.00      0.00        11
+      hopeful       0.12      0.09      0.11        11
+       hungry       0.00      0.00      0.00        11
+        loved       0.00      0.00      0.00        11
+         okay       0.00      0.00      0.00        11
+   pissed off       0.00      0.00      0.00        11
+          sad       0.00      0.00      0.00        11
+         sick       0.00      0.00      0.00        11
+       sleepy       0.00      0.00      0.00        11
+   thoughtful       0.04      0.18      0.07        11
+        tired       0.20      0.09      0.13        11
+
+  avg / total       0.06      0.07      0.05       440
+
+Results for SVC(kernel=linear)
+Training time: 777.174344s; Prediction time: 11.067967s
+               precision    recall  f1-score   support
+
+ accomplished       0.26      0.73      0.38        11
+   aggravated       0.00      0.00      0.00        11
+       amused       0.00      0.00      0.00        11
+      annoyed       0.22      0.18      0.20        11
+      anxious       0.00      0.00      0.00        11
+        awake       0.00      0.00      0.00        11
+         blah       0.00      0.00      0.00        11
+        blank       0.00      0.00      0.00        11
+        bored       0.23      0.27      0.25        11
+       bouncy       0.00      0.00      0.00        11
+         busy       0.21      0.27      0.24        11
+         calm       0.17      0.09      0.12        11
+     cheerful       0.14      0.09      0.11        11
+      chipper       0.00      0.00      0.00        11
+         cold       0.00      0.00      0.00        11
+     confused       0.12      0.18      0.15        11
+contemplative       0.07      0.09      0.08        11
+      content       0.07      0.09      0.08        11
+       cranky       0.00      0.00      0.00        11
+        crazy       0.00      0.00      0.00        11
+     creative       0.06      0.09      0.07        11
+      curious       0.13      0.18      0.15        11
+    depressed       0.17      0.18      0.17        11
+      drained       0.17      0.18      0.17        11
+     ecstatic       0.12      0.18      0.14        11
+      excited       0.12      0.18      0.15        11
+    exhausted       0.00      0.00      0.00        11
+   frustrated       0.08      0.09      0.08        11
+         good       0.00      0.00      0.00        11
+        happy       0.12      0.18      0.14        11
+      hopeful       0.22      0.18      0.20        11
+       hungry       0.00      0.00      0.00        11
+        loved       0.18      0.27      0.21        11
+         okay       0.00      0.00      0.00        11
+   pissed off       0.25      0.27      0.26        11
+          sad       0.14      0.09      0.11        11
+         sick       0.62      0.45      0.53        11
+       sleepy       0.40      0.18      0.25        11
+   thoughtful       0.06      0.09      0.07        11
+        tired       0.18      0.18      0.18        11
+
+  avg / total       0.11      0.12      0.11       440
+
+Results for LinearSVC()
+Training time: 38.935350s; Prediction time: 0.011034s
+               precision    recall  f1-score   support
+
+ accomplished       0.29      0.82      0.43        11
+   aggravated       0.14      0.09      0.11        11
+       amused       0.12      0.09      0.11        11
+      annoyed       0.00      0.00      0.00        11
+      anxious       0.00      0.00      0.00        11
+        awake       0.00      0.00      0.00        11
+         blah       0.00      0.00      0.00        11
+        blank       0.00      0.00      0.00        11
+        bored       0.10      0.09      0.10        11
+       bouncy       0.00      0.00      0.00        11
+         busy       0.15      0.18      0.17        11
+         calm       0.09      0.09      0.09        11
+     cheerful       0.00      0.00      0.00        11
+      chipper       0.00      0.00      0.00        11
+         cold       0.00      0.00      0.00        11
+     confused       0.07      0.09      0.08        11
+contemplative       0.00      0.00      0.00        11
+      content       0.09      0.09      0.09        11
+       cranky       0.09      0.09      0.09        11
+        crazy       0.00      0.00      0.00        11
+     creative       0.06      0.09      0.07        11
+      curious       0.12      0.18      0.15        11
+    depressed       0.23      0.27      0.25        11
+      drained       0.00      0.00      0.00        11
+     ecstatic       0.17      0.27      0.21        11
+      excited       0.00      0.00      0.00        11
+    exhausted       0.00      0.00      0.00        11
+   frustrated       0.00      0.00      0.00        11
+         good       0.00      0.00      0.00        11
+        happy       0.00      0.00      0.00        11
+      hopeful       0.00      0.00      0.00        11
+       hungry       0.08      0.09      0.09        11
+        loved       0.38      0.27      0.32        11
+         okay       0.00      0.00      0.00        11
+   pissed off       0.20      0.27      0.23        11
+          sad       0.11      0.09      0.10        11
+         sick       0.40      0.55      0.46        11
+       sleepy       0.10      0.09      0.10        11
+   thoughtful       0.00      0.00      0.00        11
+        tired       0.00      0.00      0.00        11
+
+  avg / total       0.08      0.10      0.08       440
+
+
+
+
+Samples=1000
+python classifyBlogs.py  
+Results for LinearSVC()
+Training time: 54.007709s; Prediction time: 0.083487s
+               precision    recall  f1-score   support
+
+ accomplished       0.19      0.19      0.19       111
+   aggravated       0.05      0.04      0.04       111
+       amused       0.08      0.09      0.09       111
+      annoyed       0.05      0.05      0.05       111
+      anxious       0.03      0.03      0.03       111
+        awake       0.04      0.04      0.04       111
+         blah       0.01      0.01      0.01       111
+        blank       0.03      0.03      0.03       111
+        bored       0.10      0.09      0.09       111
+       bouncy       0.03      0.03      0.03       111
+         busy       0.09      0.09      0.09       111
+         calm       0.02      0.02      0.02       111
+     cheerful       0.03      0.02      0.02       111
+      chipper       0.04      0.03      0.03       111
+         cold       0.14      0.13      0.13       111
+     confused       0.13      0.14      0.14       111
+contemplative       0.04      0.04      0.04       111
+      content       0.02      0.02      0.02       111
+       cranky       0.04      0.03      0.03       111
+        crazy       0.07      0.05      0.05       111
+     creative       0.09      0.08      0.08       111
+      curious       0.09      0.14      0.11       111
+    depressed       0.16      0.23      0.19       111
+      drained       0.02      0.02      0.02       111
+     ecstatic       0.07      0.07      0.07       111
+      excited       0.09      0.11      0.10       111
+    exhausted       0.12      0.16      0.14       111
+   frustrated       0.07      0.08      0.07       111
+         good       0.02      0.02      0.02       111
+        happy       0.06      0.06      0.06       111
+      hopeful       0.08      0.07      0.08       111
+       hungry       0.10      0.10      0.10       111
+        loved       0.24      0.34      0.28       111
+         okay       0.04      0.04      0.04       111
+   pissed off       0.28      0.37      0.32       111
+          sad       0.15      0.19      0.17       111
+         sick       0.29      0.37      0.32       111
+       sleepy       0.07      0.06      0.07       111
+   thoughtful       0.07      0.08      0.08       111
+        tired       0.03      0.03      0.03       111
+
+  avg / total       0.08      0.09      0.09      4440
+
+
+Samples = 4000
+python classifyBlogs.py 
+Results for LinearSVC()
+Training time: 382.794920s; Prediction time: 0.120791s
+               precision    recall  f1-score   support
+
+ accomplished       0.14      0.16      0.15       111
+   aggravated       0.06      0.05      0.06       111
+       amused       0.10      0.21      0.13       111
+      annoyed       0.07      0.08      0.07       111
+      anxious       0.03      0.03      0.03       111
+        awake       0.07      0.05      0.06       111
+         blah       0.01      0.01      0.01       111
+        blank       0.03      0.02      0.02       111
+        bored       0.10      0.11      0.10       111
+       bouncy       0.06      0.05      0.06       111
+         busy       0.06      0.07      0.06       111
+         calm       0.02      0.01      0.01       111
+     cheerful       0.06      0.05      0.05       111
+      chipper       0.05      0.04      0.04       111
+         cold       0.20      0.14      0.17       111
+     confused       0.14      0.13      0.13       111
+contemplative       0.06      0.06      0.06       111
+      content       0.06      0.05      0.05       111
+       cranky       0.06      0.05      0.05       111
+        crazy       0.06      0.05      0.06       111
+     creative       0.09      0.09      0.09       111
+      curious       0.14      0.16      0.15       111
+    depressed       0.18      0.22      0.20       111
+      drained       0.09      0.06      0.07       111
+     ecstatic       0.15      0.18      0.17       111
+      excited       0.13      0.18      0.15       111
+    exhausted       0.14      0.14      0.14       111
+   frustrated       0.08      0.09      0.09       111
+         good       0.01      0.01      0.01       111
+        happy       0.11      0.10      0.10       111
+      hopeful       0.11      0.10      0.10       111
+       hungry       0.12      0.13      0.12       111
+        loved       0.26      0.33      0.29       111
+         okay       0.05      0.04      0.04       111
+   pissed off       0.22      0.32      0.26       111
+          sad       0.16      0.24      0.19       111
+         sick       0.34      0.47      0.39       111
+       sleepy       0.08      0.06      0.07       111
+   thoughtful       0.10      0.11      0.11       111
+        tired       0.02      0.02      0.02       111
+
+  avg / total       0.10      0.11      0.10      4440
+
+----------------------------------------------------------------------------------------------------------------
+
+Samples=50, vectorizer = TfidfVectorizer(min_df=1,
+                                 max_df = 0.9,
+                                 sublinear_tf=True,
+                                 use_idf=True,
+                                 ngram_range=(1, 3))
+
+python classifyBlogs.py 
+Results for LinearSVC()
+Training time: 44.070113s; Prediction time: 0.005222s
+/home/srishti/.local/lib/python2.7/site-packages/sklearn/metrics/classification.py:1113: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples.
+  'precision', 'predicted', average, warn_for)
+               precision    recall  f1-score   support
+
+ accomplished       0.00      0.00      0.00         1
+   aggravated       0.00      0.00      0.00         1
+       amused       0.00      0.00      0.00         1
+      annoyed       0.00      0.00      0.00         1
+      anxious       0.00      0.00      0.00         1
+        awake       0.00      0.00      0.00         1
+         blah       0.00      0.00      0.00         1
+        blank       0.00      0.00      0.00         1
+        bored       0.00      0.00      0.00         1
+       bouncy       0.00      0.00      0.00         1
+         busy       0.00      0.00      0.00         1
+         calm       0.00      0.00      0.00         1
+     cheerful       0.00      0.00      0.00         1
+      chipper       0.00      0.00      0.00         1
+         cold       0.00      0.00      0.00         1
+     confused       0.00      0.00      0.00         1
+contemplative       0.00      0.00      0.00         1
+      content       0.00      0.00      0.00         1
+       cranky       0.00      0.00      0.00         1
+        crazy       0.00      0.00      0.00         1
+     creative       0.25      1.00      0.40         1
+      curious       0.00      0.00      0.00         1
+    depressed       0.00      0.00      0.00         1
+      drained       0.00      0.00      0.00         1
+     ecstatic       0.00      0.00      0.00         1
+      excited       0.00      0.00      0.00         1
+    exhausted       0.00      0.00      0.00         1
+   frustrated       0.00      0.00      0.00         1
+         good       0.00      0.00      0.00         1
+        happy       0.00      0.00      0.00         1
+      hopeful       0.00      0.00      0.00         1
+       hungry       0.00      0.00      0.00         1
+        loved       1.00      1.00      1.00         1
+         okay       0.33      1.00      0.50         1
+   pissed off       0.00      0.00      0.00         1
+          sad       0.00      0.00      0.00         1
+         sick       0.20      1.00      0.33         1
+       sleepy       0.00      0.00      0.00         1
+   thoughtful       0.00      0.00      0.00         1
+        tired       0.00      0.00      0.00         1
+
+  avg / total       0.04      0.10      0.06        40
+
+
+Samples=50, vectorizer = TfidfVectorizer(min_df=2,
+                                 max_df = 0.9,
+                                 sublinear_tf=True,
+                                 use_idf=True,
+                                 ngram_range=(1, 3))
+python classifyBlogs.py 
+Results for LinearSVC()
+Training time: 5.775842s; Prediction time: 0.003214s
+/home/srishti/.local/lib/python2.7/site-packages/sklearn/metrics/classification.py:1113: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples.
+  'precision', 'predicted', average, warn_for)
+               precision    recall  f1-score   support
+
+ accomplished       0.00      0.00      0.00         1
+   aggravated       0.00      0.00      0.00         1
+       amused       0.00      0.00      0.00         1
+      annoyed       0.00      0.00      0.00         1
+      anxious       0.00      0.00      0.00         1
+        awake       0.00      0.00      0.00         1
+         blah       0.00      0.00      0.00         1
+        blank       0.00      0.00      0.00         1
+        bored       0.00      0.00      0.00         1
+       bouncy       0.00      0.00      0.00         1
+         busy       0.00      0.00      0.00         1
+         calm       0.00      0.00      0.00         1
+     cheerful       0.00      0.00      0.00         1
+      chipper       0.00      0.00      0.00         1
+         cold       0.00      0.00      0.00         1
+     confused       0.00      0.00      0.00         1
+contemplative       0.00      0.00      0.00         1
+      content       0.00      0.00      0.00         1
+       cranky       0.00      0.00      0.00         1
+        crazy       0.00      0.00      0.00         1
+     creative       0.25      1.00      0.40         1
+      curious       0.00      0.00      0.00         1
+    depressed       0.00      0.00      0.00         1
+      drained       0.00      0.00      0.00         1
+     ecstatic       0.00      0.00      0.00         1
+      excited       0.00      0.00      0.00         1
+    exhausted       0.00      0.00      0.00         1
+   frustrated       0.00      0.00      0.00         1
+         good       0.00      0.00      0.00         1
+        happy       0.00      0.00      0.00         1
+      hopeful       0.00      0.00      0.00         1
+       hungry       0.00      0.00      0.00         1
+        loved       1.00      1.00      1.00         1
+         okay       0.50      1.00      0.67         1
+   pissed off       0.00      0.00      0.00         1
+          sad       0.00      0.00      0.00         1
+         sick       0.33      1.00      0.50         1
+       sleepy       0.00      0.00      0.00         1
+   thoughtful       0.00      0.00      0.00         1
+        tired       0.00      0.00      0.00         1
+
+  avg / total       0.05      0.10      0.06        40
+
+
+
+
+Samples=100, vectorizer = TfidfVectorizer(min_df=2,
+                                 max_df = 0.9,
+                                 sublinear_tf=True,
+                                 use_idf=True,
+                                 ngram_range=(1, 3))
+python classifyBlogs.py 
+Results for LinearSVC()
+Training time: 17.352047s; Prediction time: 0.023626s
+               precision    recall  f1-score   support
+
+ accomplished       0.56      0.82      0.67        11
+   aggravated       0.08      0.09      0.08        11
+       amused       0.09      0.09      0.09        11
+      annoyed       0.00      0.00      0.00        11
+      anxious       0.00      0.00      0.00        11
+        awake       0.00      0.00      0.00        11
+         blah       0.00      0.00      0.00        11
+        blank       0.00      0.00      0.00        11
+        bored       0.00      0.00      0.00        11
+       bouncy       0.00      0.00      0.00        11
+         busy       0.11      0.18      0.14        11
+         calm       0.11      0.09      0.10        11
+     cheerful       0.00      0.00      0.00        11
+      chipper       0.12      0.09      0.11        11
+         cold       0.00      0.00      0.00        11
+     confused       0.12      0.18      0.15        11
+contemplative       0.00      0.00      0.00        11
+      content       0.09      0.09      0.09        11
+       cranky       0.00      0.00      0.00        11
+        crazy       0.00      0.00      0.00        11
+     creative       0.24      0.36      0.29        11
+      curious       0.15      0.18      0.17        11
+    depressed       0.12      0.18      0.15        11
+      drained       0.00      0.00      0.00        11
+     ecstatic       0.10      0.09      0.10        11
+      excited       0.18      0.18      0.18        11
+    exhausted       0.09      0.09      0.09        11
+   frustrated       0.00      0.00      0.00        11
+         good       0.00      0.00      0.00        11
+        happy       0.00      0.00      0.00        11
+      hopeful       0.12      0.18      0.14        11
+       hungry       0.00      0.00      0.00        11
+        loved       0.12      0.18      0.15        11
+         okay       0.09      0.09      0.09        11
+   pissed off       0.07      0.09      0.08        11
+          sad       0.07      0.09      0.08        11
+         sick       0.27      0.36      0.31        11
+       sleepy       0.07      0.09      0.08        11
+   thoughtful       0.07      0.09      0.08        11
+        tired       0.00      0.00      0.00        11
+
+  avg / total       0.08      0.10      0.08       440
+
+
+
+Samples=500, vectorizer = TfidfVectorizer(min_df=2,
+                                 max_df = 0.9,
+                                 sublinear_tf=True,
+                                 use_idf=True,
+                                 ngram_range=(1, 3))
+python classifyBlogs.py 
+Results for LinearSVC()
+Training time: 257.164983s; Prediction time: 0.052429s
+               precision    recall  f1-score   support
+
+ accomplished       0.32      0.91      0.48        11
+   aggravated       0.00      0.00      0.00        11
+       amused       0.00      0.00      0.00        11
+      annoyed       0.00      0.00      0.00        11
+      anxious       0.00      0.00      0.00        11
+        awake       0.00      0.00      0.00        11
+         blah       0.00      0.00      0.00        11
+        blank       0.00      0.00      0.00        11
+        bored       0.09      0.09      0.09        11
+       bouncy       0.00      0.00      0.00        11
+         busy       0.07      0.09      0.08        11
+         calm       0.00      0.00      0.00        11
+     cheerful       0.29      0.18      0.22        11
+      chipper       0.00      0.00      0.00        11
+         cold       0.00      0.00      0.00        11
+     confused       0.14      0.18      0.16        11
+contemplative       0.00      0.00      0.00        11
+      content       0.17      0.09      0.12        11
+       cranky       0.17      0.09      0.12        11
+        crazy       0.00      0.00      0.00        11
+     creative       0.22      0.36      0.28        11
+      curious       0.19      0.27      0.22        11
+    depressed       0.19      0.27      0.22        11
+      drained       0.09      0.09      0.09        11
+     ecstatic       0.25      0.36      0.30        11
+      excited       0.10      0.09      0.10        11
+    exhausted       0.00      0.00      0.00        11
+   frustrated       0.00      0.00      0.00        11
+         good       0.00      0.00      0.00        11
+        happy       0.00      0.00      0.00        11
+      hopeful       0.00      0.00      0.00        11
+       hungry       0.00      0.00      0.00        11
+        loved       0.20      0.27      0.23        11
+         okay       0.00      0.00      0.00        11
+   pissed off       0.31      0.36      0.33        11
+          sad       0.23      0.27      0.25        11
+         sick       0.29      0.45      0.36        11
+       sleepy       0.06      0.09      0.07        11
+   thoughtful       0.14      0.18      0.16        11
+        tired       0.00      0.00      0.00        11
+
+  avg / total       0.09      0.12      0.10       440
+
+Samples=500, kernel=poly
+python classifyBlogs.py 
+Results for LinearSVC()
+Training time: 860.099762s; Prediction time: 11.434085s
+/home/srishti/.local/lib/python2.7/site-packages/sklearn/metrics/classification.py:1113: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples.
+  'precision', 'predicted', average, warn_for)
+               precision    recall  f1-score   support
+
+ accomplished       0.00      0.00      0.00        11
+   aggravated       0.00      0.00      0.00        11
+       amused       0.00      0.00      0.00        11
+      annoyed       0.00      0.00      0.00        11
+      anxious       0.00      0.00      0.00        11
+        awake       0.00      0.00      0.00        11
+         blah       0.00      0.00      0.00        11
+        blank       0.00      0.00      0.00        11
+        bored       0.00      0.00      0.00        11
+       bouncy       0.00      0.00      0.00        11
+         busy       0.00      0.00      0.00        11
+         calm       0.00      0.00      0.00        11
+     cheerful       0.00      0.00      0.00        11
+      chipper       0.00      0.00      0.00        11
+         cold       0.00      0.00      0.00        11
+     confused       0.00      0.00      0.00        11
+contemplative       0.00      0.00      0.00        11
+      content       0.00      0.00      0.00        11
+       cranky       0.00      0.00      0.00        11
+        crazy       0.00      0.00      0.00        11
+     creative       0.00      0.00      0.00        11
+      curious       0.50      0.09      0.15        11
+    depressed       1.00      0.09      0.17        11
+      drained       0.11      0.18      0.13        11
+     ecstatic       0.00      0.00      0.00        11
+      excited       0.00      0.00      0.00        11
+    exhausted       0.11      0.09      0.10        11
+   frustrated       0.00      0.00      0.00        11
+         good       0.00      0.00      0.00        11
+        happy       0.00      0.00      0.00        11
+      hopeful       0.02      0.82      0.05        11
+       hungry       0.00      0.00      0.00        11
+        loved       0.00      0.00      0.00        11
+         okay       0.00      0.00      0.00        11
+   pissed off       0.00      0.00      0.00        11
+          sad       0.00      0.00      0.00        11
+         sick       0.00      0.00      0.00        11
+       sleepy       0.00      0.00      0.00        11
+   thoughtful       0.00      0.00      0.00        11
+        tired       0.00      0.00      0.00        11
+
+  avg / total       0.04      0.03      0.01       440
+
+max_df=0.8, min_df=5, samples=500, linearSvc
+python classifyBlogs.py 
+Results for LinearSVC()
+Training time: 18.920581s; Prediction time: 0.009927s
+               precision    recall  f1-score   support
+
+ accomplished       0.26      0.73      0.38        11
+   aggravated       0.00      0.00      0.00        11
+       amused       0.18      0.18      0.18        11
+      annoyed       0.00      0.00      0.00        11
+      anxious       0.00      0.00      0.00        11
+        awake       0.00      0.00      0.00        11
+         blah       0.00      0.00      0.00        11
+        blank       0.00      0.00      0.00        11
+        bored       0.08      0.09      0.09        11
+       bouncy       0.00      0.00      0.00        11
+         busy       0.20      0.18      0.19        11
+         calm       0.11      0.09      0.10        11
+     cheerful       0.12      0.09      0.11        11
+      chipper       0.00      0.00      0.00        11
+         cold       0.00      0.00      0.00        11
+     confused       0.07      0.09      0.08        11
+contemplative       0.00      0.00      0.00        11
+      content       0.11      0.09      0.10        11
+       cranky       0.09      0.09      0.09        11
+        crazy       0.00      0.00      0.00        11
+     creative       0.00      0.00      0.00        11
+      curious       0.14      0.18      0.16        11
+    depressed       0.30      0.27      0.29        11
+      drained       0.00      0.00      0.00        11
+     ecstatic       0.10      0.18      0.12        11
+      excited       0.07      0.09      0.08        11
+    exhausted       0.00      0.00      0.00        11
+   frustrated       0.00      0.00      0.00        11
+         good       0.00      0.00      0.00        11
+        happy       0.00      0.00      0.00        11
+      hopeful       0.00      0.00      0.00        11
+       hungry       0.07      0.09      0.08        11
+        loved       0.50      0.27      0.35        11
+         okay       0.00      0.00      0.00        11
+   pissed off       0.17      0.18      0.17        11
+          sad       0.12      0.09      0.11        11
+         sick       0.46      0.55      0.50        11
+       sleepy       0.00      0.00      0.00        11
+   thoughtful       0.00      0.00      0.00        11
+        tired       0.00      0.00      0.00        11
+
+  avg / total       0.08      0.09      0.08       440
+
+
+linearSVC, samples=500
+ python classifyBlogs.py 
+Results for LinearSVC()
+Training time: 22.464667s; Prediction time: 0.043015s
+               precision    recall  f1-score   support
+
+ accomplished       0.28      0.30      0.29        50
+   aggravated       0.06      0.06      0.06        50
+       amused       0.08      0.08      0.08        50
+      annoyed       0.07      0.08      0.07        50
+      anxious       0.06      0.04      0.05        50
+        awake       0.02      0.02      0.02        50
+         blah       0.06      0.06      0.06        50
+        blank       0.02      0.02      0.02        50
+        bored       0.11      0.12      0.12        50
+       bouncy       0.04      0.04      0.04        50
+         busy       0.14      0.16      0.15        50
+         calm       0.05      0.04      0.04        50
+     cheerful       0.00      0.00      0.00        50
+      chipper       0.02      0.02      0.02        50
+         cold       0.11      0.12      0.11        50
+     confused       0.07      0.06      0.07        50
+contemplative       0.08      0.08      0.08        50
+      content       0.10      0.10      0.10        50
+       cranky       0.03      0.02      0.03        50
+        crazy       0.05      0.04      0.04        50
+     creative       0.10      0.12      0.11        50
+      curious       0.08      0.06      0.07        50
+    depressed       0.22      0.26      0.24        50
+      drained       0.02      0.02      0.02        50
+     ecstatic       0.08      0.12      0.10        50
+      excited       0.07      0.08      0.08        50
+    exhausted       0.04      0.04      0.04        50
+   frustrated       0.04      0.04      0.04        50
+         good       0.02      0.02      0.02        50
+        happy       0.08      0.08      0.08        50
+      hopeful       0.11      0.08      0.09        50
+       hungry       0.15      0.14      0.14        50
+        loved       0.18      0.26      0.21        50
+         okay       0.08      0.06      0.07        50
+   pissed off       0.22      0.28      0.24        50
+          sad       0.27      0.32      0.29        50
+         sick       0.35      0.40      0.37        50
+       sleepy       0.06      0.06      0.06        50
+   thoughtful       0.09      0.08      0.08        50
+        tired       0.09      0.08      0.09        50
+
+  avg / total       0.09      0.10      0.10      2000
+
+linearSVC, samples=1000
+python classifyBlogs.py 
+Results for LinearSVC()
+Training time: 49.160912s; Prediction time: 0.091228s
+               precision    recall  f1-score   support
+
+ accomplished       0.21      0.25      0.23       100
+   aggravated       0.06      0.06      0.06       100
+       amused       0.09      0.11      0.10       100
+      annoyed       0.02      0.02      0.02       100
+      anxious       0.09      0.08      0.08       100
+        awake       0.02      0.02      0.02       100
+         blah       0.04      0.03      0.03       100
+        blank       0.04      0.03      0.03       100
+        bored       0.13      0.15      0.14       100
+       bouncy       0.03      0.03      0.03       100
+         busy       0.10      0.11      0.11       100
+         calm       0.01      0.01      0.01       100
+     cheerful       0.05      0.05      0.05       100
+      chipper       0.00      0.00      0.00       100
+         cold       0.09      0.09      0.09       100
+     confused       0.09      0.09      0.09       100
+contemplative       0.09      0.08      0.08       100
+      content       0.06      0.06      0.06       100
+       cranky       0.04      0.04      0.04       100
+        crazy       0.09      0.07      0.08       100
+     creative       0.12      0.12      0.12       100
+      curious       0.08      0.12      0.09       100
+    depressed       0.16      0.18      0.17       100
+      drained       0.01      0.01      0.01       100
+     ecstatic       0.11      0.11      0.11       100
+      excited       0.08      0.09      0.08       100
+    exhausted       0.06      0.06      0.06       100
+   frustrated       0.07      0.07      0.07       100
+         good       0.09      0.08      0.08       100
+        happy       0.06      0.06      0.06       100
+      hopeful       0.05      0.05      0.05       100
+       hungry       0.13      0.12      0.13       100
+        loved       0.22      0.29      0.25       100
+         okay       0.04      0.03      0.03       100
+   pissed off       0.22      0.32      0.26       100
+          sad       0.25      0.29      0.27       100
+         sick       0.38      0.46      0.42       100
+       sleepy       0.07      0.06      0.07       100
+   thoughtful       0.09      0.09      0.09       100
+        tired       0.02      0.02      0.02       100
+
+  avg / total       0.09      0.10      0.10      4000
+
+samples=1000, 20%for testing
+python classifyBlogs.py 
+Results for LinearSVC()
+Training time: 41.455795s; Prediction time: 0.159551s
+               precision    recall  f1-score   support
+
+ accomplished       0.20      0.22      0.21       200
+   aggravated       0.08      0.09      0.08       200
+       amused       0.09      0.11      0.10       200
+      annoyed       0.06      0.07      0.07       200
+      anxious       0.06      0.06      0.06       200
+        awake       0.03      0.03      0.03       200
+         blah       0.04      0.04      0.04       200
+        blank       0.05      0.04      0.04       200
+        bored       0.10      0.10      0.10       200
+       bouncy       0.05      0.04      0.05       200
+         busy       0.10      0.10      0.10       200
+         calm       0.03      0.03      0.03       200
+     cheerful       0.02      0.01      0.02       200
+      chipper       0.02      0.01      0.02       200
+         cold       0.10      0.10      0.10       200
+     confused       0.10      0.10      0.10       200
+contemplative       0.05      0.05      0.05       200
+      content       0.07      0.06      0.06       200
+       cranky       0.03      0.03      0.03       200
+        crazy       0.05      0.04      0.04       200
+     creative       0.10      0.10      0.10       200
+      curious       0.08      0.12      0.10       200
+    depressed       0.15      0.17      0.16       200
+      drained       0.04      0.04      0.04       200
+     ecstatic       0.06      0.06      0.06       200
+      excited       0.11      0.13      0.12       200
+    exhausted       0.12      0.12      0.12       200
+   frustrated       0.08      0.07      0.07       200
+         good       0.08      0.07      0.08       200
+        happy       0.07      0.07      0.07       200
+      hopeful       0.07      0.07      0.07       200
+       hungry       0.10      0.10      0.10       200
+        loved       0.21      0.28      0.24       200
+         okay       0.06      0.06      0.06       200
+   pissed off       0.25      0.33      0.29       200
+          sad       0.20      0.23      0.22       200
+         sick       0.33      0.41      0.37       200
+       sleepy       0.08      0.06      0.07       200
+   thoughtful       0.07      0.08      0.08       200
+        tired       0.05      0.04      0.04       200
+
+  avg / total       0.09      0.10      0.09      8000
+
+samples=1000, ngram_range(1,2)
+python classifyBlogs.py 
+Results for LinearSVC()
+Training time: 194.907746s; Prediction time: 0.182959s
+               precision    recall  f1-score   support
+
+ accomplished       0.29      0.29      0.29       100
+   aggravated       0.07      0.07      0.07       100
+       amused       0.12      0.13      0.12       100
+      annoyed       0.08      0.08      0.08       100
+      anxious       0.08      0.07      0.07       100
+        awake       0.04      0.03      0.04       100
+         blah       0.08      0.06      0.07       100
+        blank       0.01      0.01      0.01       100
+        bored       0.13      0.15      0.14       100
+       bouncy       0.07      0.06      0.06       100
+         busy       0.15      0.15      0.15       100
+         calm       0.00      0.00      0.00       100
+     cheerful       0.03      0.02      0.02       100
+      chipper       0.01      0.01      0.01       100
+         cold       0.10      0.09      0.10       100
+     confused       0.09      0.08      0.08       100
+contemplative       0.08      0.08      0.08       100
+      content       0.05      0.05      0.05       100
+       cranky       0.06      0.05      0.05       100
+        crazy       0.07      0.06      0.06       100
+     creative       0.12      0.12      0.12       100
+      curious       0.08      0.10      0.09       100
+    depressed       0.18      0.22      0.20       100
+      drained       0.04      0.03      0.03       100
+     ecstatic       0.16      0.19      0.17       100
+      excited       0.11      0.13      0.12       100
+    exhausted       0.12      0.12      0.12       100
+   frustrated       0.08      0.07      0.07       100
+         good       0.10      0.08      0.09       100
+        happy       0.09      0.10      0.09       100
+      hopeful       0.07      0.07      0.07       100
+       hungry       0.12      0.12      0.12       100
+        loved       0.19      0.25      0.22       100
+         okay       0.05      0.04      0.04       100
+   pissed off       0.27      0.42      0.33       100
+          sad       0.24      0.32      0.27       100
+         sick       0.42      0.50      0.45       100
+       sleepy       0.09      0.08      0.08       100
+   thoughtful       0.10      0.11      0.10       100
+        tired       0.07      0.05      0.06       100
+
+  avg / total       0.11      0.12      0.11      4000
+
+
+samples=1000, ngram_range(1,3)
+python classifyBlogs.py 
+Results for LinearSVC()
+Training time: 291.310312s; Prediction time: 0.305352s
+               precision    recall  f1-score   support
+
+ accomplished       0.23      0.24      0.24       100
+   aggravated       0.06      0.07      0.07       100
+       amused       0.10      0.12      0.11       100
+      annoyed       0.09      0.09      0.09       100
+      anxious       0.08      0.07      0.08       100
+        awake       0.06      0.04      0.05       100
+         blah       0.06      0.05      0.05       100
+        blank       0.01      0.01      0.01       100
+        bored       0.12      0.15      0.13       100
+       bouncy       0.06      0.04      0.05       100
+         busy       0.13      0.14      0.14       100
+         calm       0.02      0.02      0.02       100
+     cheerful       0.07      0.05      0.06       100
+      chipper       0.00      0.00      0.00       100
+         cold       0.13      0.11      0.12       100
+     confused       0.08      0.08      0.08       100
+contemplative       0.05      0.05      0.05       100
+      content       0.03      0.03      0.03       100
+       cranky       0.05      0.04      0.04       100
+        crazy       0.09      0.07      0.08       100
+     creative       0.10      0.11      0.11       100
+      curious       0.08      0.11      0.09       100
+    depressed       0.20      0.24      0.22       100
+      drained       0.04      0.03      0.03       100
+     ecstatic       0.14      0.16      0.15       100
+      excited       0.13      0.16      0.14       100
+    exhausted       0.12      0.11      0.12       100
+   frustrated       0.08      0.07      0.07       100
+         good       0.08      0.07      0.08       100
+        happy       0.10      0.11      0.10       100
+      hopeful       0.06      0.06      0.06       100
+       hungry       0.13      0.13      0.13       100
+        loved       0.18      0.25      0.21       100
+         okay       0.02      0.02      0.02       100
+   pissed off       0.26      0.43      0.33       100
+          sad       0.26      0.34      0.29       100
+         sick       0.40      0.51      0.45       100
+       sleepy       0.08      0.07      0.08       100
+   thoughtful       0.09      0.09      0.09       100
+        tired       0.06      0.05      0.06       100
+
+  avg / total       0.10      0.11      0.11      4000
+
+samples=2000, ngram_range=(1, 1), 10% for testing
+ python classifyBlogs.py 
+Results for LinearSVC()
+Training time: 132.631875s; Prediction time: 0.190776s
+               precision    recall  f1-score   support
+
+ accomplished       0.16      0.18      0.17       200
+   aggravated       0.07      0.07      0.07       200
+       amused       0.11      0.17      0.13       200
+      annoyed       0.08      0.07      0.08       200
+      anxious       0.11      0.09      0.10       200
+        awake       0.07      0.06      0.07       200
+         blah       0.04      0.04      0.04       200
+        blank       0.04      0.03      0.03       200
+        bored       0.11      0.12      0.12       200
+       bouncy       0.03      0.03      0.03       200
+         busy       0.09      0.10      0.09       200
+         calm       0.03      0.03      0.03       200
+     cheerful       0.07      0.07      0.07       200
+      chipper       0.05      0.04      0.04       200
+         cold       0.10      0.09      0.09       200
+     confused       0.10      0.10      0.10       200
+contemplative       0.08      0.07      0.08       200
+      content       0.06      0.05      0.05       200
+       cranky       0.06      0.06      0.06       200
+        crazy       0.08      0.06      0.07       200
+     creative       0.11      0.14      0.12       200
+      curious       0.13      0.14      0.13       200
+    depressed       0.18      0.23      0.20       200
+      drained       0.03      0.03      0.03       200
+     ecstatic       0.12      0.15      0.14       200
+      excited       0.11      0.12      0.11       200
+    exhausted       0.14      0.14      0.14       200
+   frustrated       0.11      0.11      0.11       200
+         good       0.08      0.06      0.07       200
+        happy       0.05      0.04      0.05       200
+      hopeful       0.10      0.09      0.09       200
+       hungry       0.17      0.17      0.17       200
+        loved       0.22      0.30      0.25       200
+         okay       0.04      0.04      0.04       200
+   pissed off       0.23      0.31      0.26       200
+          sad       0.22      0.26      0.24       200
+         sick       0.34      0.40      0.37       200
+       sleepy       0.07      0.06      0.06       200
+   thoughtful       0.08      0.08      0.08       200
+        tired       0.07      0.06      0.06       200
+
+  avg / total       0.10      0.11      0.11      8000
+
+
+samples=2000, ngram_range=(1, 1), 20% for testing
+python classifyBlogs.py 
+Results for LinearSVC()
+Training time: 87.751324s; Prediction time: 0.249035s
+               precision    recall  f1-score   support
+
+ accomplished       0.14      0.16      0.15       400
+   aggravated       0.06      0.06      0.06       400
+       amused       0.10      0.17      0.13       400
+      annoyed       0.10      0.09      0.09       400
+      anxious       0.07      0.06      0.07       400
+        awake       0.07      0.06      0.07       400
+         blah       0.06      0.05      0.05       400
+        blank       0.04      0.03      0.03       400
+        bored       0.11      0.12      0.11       400
+       bouncy       0.04      0.03      0.03       400
+         busy       0.10      0.11      0.10       400
+         calm       0.03      0.03      0.03       400
+     cheerful       0.06      0.05      0.05       400
+      chipper       0.06      0.05      0.06       400
+         cold       0.13      0.11      0.12       400
+     confused       0.10      0.10      0.10       400
+contemplative       0.07      0.07      0.07       400
+      content       0.05      0.04      0.05       400
+       cranky       0.07      0.06      0.06       400
+        crazy       0.07      0.06      0.06       400
+     creative       0.11      0.13      0.12       400
+      curious       0.12      0.15      0.14       400
+    depressed       0.17      0.22      0.19       400
+      drained       0.03      0.02      0.02       400
+     ecstatic       0.12      0.13      0.12       400
+      excited       0.10      0.12      0.11       400
+    exhausted       0.13      0.12      0.13       400
+   frustrated       0.09      0.10      0.09       400
+         good       0.06      0.05      0.06       400
+        happy       0.05      0.05      0.05       400
+      hopeful       0.10      0.10      0.10       400
+       hungry       0.16      0.15      0.16       400
+        loved       0.21      0.28      0.24       400
+         okay       0.05      0.04      0.04       400
+   pissed off       0.22      0.29      0.25       400
+          sad       0.21      0.26      0.23       400
+         sick       0.31      0.37      0.34       400
+       sleepy       0.07      0.06      0.06       400
+   thoughtful       0.08      0.09      0.08       400
+        tired       0.06      0.05      0.06       400
+
+  avg / total       0.10      0.11      0.10     16000
+
+
+samples=2000, ngram_range=(1, 2), 10% for testing
+python classifyBlogs.py 
+Results for LinearSVC()
+Training time: 459.942367s; Prediction time: 0.590687s
+               precision    recall  f1-score   support
+
+ accomplished       0.21      0.23      0.22       200
+   aggravated       0.06      0.06      0.06       200
+       amused       0.13      0.19      0.16       200
+      annoyed       0.08      0.08      0.08       200
+      anxious       0.07      0.06      0.06       200
+        awake       0.06      0.04      0.05       200
+         blah       0.05      0.04      0.05       200
+        blank       0.03      0.02      0.02       200
+        bored       0.14      0.16      0.15       200
+       bouncy       0.08      0.07      0.07       200
+         busy       0.10      0.10      0.10       200
+         calm       0.04      0.04      0.04       200
+     cheerful       0.04      0.04      0.04       200
+      chipper       0.01      0.01      0.01       200
+         cold       0.14      0.12      0.13       200
+     confused       0.11      0.11      0.11       200
+contemplative       0.06      0.06      0.06       200
+      content       0.05      0.04      0.04       200
+       cranky       0.06      0.04      0.05       200
+        crazy       0.01      0.01      0.01       200
+     creative       0.13      0.16      0.14       200
+      curious       0.13      0.14      0.14       200
+    depressed       0.22      0.27      0.24       200
+      drained       0.06      0.04      0.05       200
+     ecstatic       0.15      0.17      0.16       200
+      excited       0.14      0.15      0.14       200
+    exhausted       0.17      0.18      0.18       200
+   frustrated       0.11      0.12      0.11       200
+         good       0.07      0.07      0.07       200
+        happy       0.12      0.12      0.12       200
+      hopeful       0.08      0.08      0.08       200
+       hungry       0.15      0.15      0.15       200
+        loved       0.23      0.30      0.27       200
+         okay       0.03      0.03      0.03       200
+   pissed off       0.23      0.38      0.29       200
+          sad       0.23      0.29      0.25       200
+         sick       0.33      0.41      0.37       200
+       sleepy       0.08      0.08      0.08       200
+   thoughtful       0.11      0.12      0.11       200
+        tired       0.08      0.06      0.07       200
+
+  avg / total       0.11      0.12      0.11      8000
+
+samples=2000, ngram_range=(1, 2), 20% for testing
+python classifyBlogs.py 
+Results for LinearSVC()
+Training time: 275.874153s; Prediction time: 0.785117s
+               precision    recall  f1-score   support
+
+ accomplished       0.16      0.18      0.17       400
+   aggravated       0.06      0.06      0.06       400
+       amused       0.11      0.17      0.13       400
+      annoyed       0.07      0.07      0.07       400
+      anxious       0.08      0.07      0.07       400
+        awake       0.04      0.03      0.04       400
+         blah       0.07      0.05      0.06       400
+        blank       0.04      0.03      0.03       400
+        bored       0.11      0.12      0.12       400
+       bouncy       0.04      0.04      0.04       400
+         busy       0.10      0.10      0.10       400
+         calm       0.06      0.05      0.05       400
+     cheerful       0.04      0.04      0.04       400
+      chipper       0.03      0.02      0.03       400
+         cold       0.15      0.13      0.14       400
+     confused       0.12      0.12      0.12       400
+contemplative       0.04      0.04      0.04       400
+      content       0.04      0.03      0.03       400
+       cranky       0.07      0.05      0.06       400
+        crazy       0.04      0.03      0.03       400
+     creative       0.11      0.14      0.12       400
+      curious       0.14      0.15      0.15       400
+    depressed       0.21      0.26      0.23       400
+      drained       0.04      0.03      0.03       400
+     ecstatic       0.14      0.15      0.15       400
+      excited       0.12      0.15      0.13       400
+    exhausted       0.15      0.16      0.16       400
+   frustrated       0.12      0.12      0.12       400
+         good       0.06      0.06      0.06       400
+        happy       0.07      0.07      0.07       400
+      hopeful       0.10      0.10      0.10       400
+       hungry       0.15      0.16      0.16       400
+        loved       0.23      0.30      0.26       400
+         okay       0.04      0.04      0.04       400
+   pissed off       0.24      0.36      0.29       400
+          sad       0.22      0.29      0.25       400
+         sick       0.33      0.41      0.37       400
+       sleepy       0.07      0.06      0.07       400
+   thoughtful       0.10      0.11      0.10       400
+        tired       0.07      0.06      0.06       400
+
+  avg / total       0.11      0.12      0.11     16000
+---------------------------------------------------------------------------------------------------------
+SAMPLES=1000, unigrams
+CountVectorizer
+python classifyBlogs.py 
+Results for LinearSVC()
+Training time: 466.503511s; Prediction time: 0.183968s
+               precision    recall  f1-score   support
+
+ accomplished       0.11      0.11      0.11       200
+   aggravated       0.06      0.06      0.06       200
+       amused       0.09      0.10      0.09       200
+      annoyed       0.05      0.04      0.05       200
+      anxious       0.03      0.04      0.03       200
+        awake       0.05      0.04      0.05       200
+         blah       0.04      0.04      0.04       200
+        blank       0.04      0.04      0.04       200
+        bored       0.09      0.10      0.09       200
+       bouncy       0.06      0.06      0.06       200
+         busy       0.07      0.07      0.07       200
+         calm       0.03      0.03      0.03       200
+     cheerful       0.02      0.03      0.02       200
+      chipper       0.03      0.03      0.03       200
+         cold       0.07      0.08      0.08       200
+     confused       0.07      0.08      0.07       200
+contemplative       0.05      0.04      0.04       200
+      content       0.04      0.04      0.04       200
+       cranky       0.04      0.04      0.04       200
+        crazy       0.03      0.03      0.03       200
+     creative       0.08      0.08      0.08       200
+      curious       0.07      0.07      0.07       200
+    depressed       0.08      0.09      0.08       200
+      drained       0.04      0.04      0.04       200
+     ecstatic       0.07      0.07      0.07       200
+      excited       0.10      0.10      0.10       200
+    exhausted       0.10      0.10      0.10       200
+   frustrated       0.05      0.04      0.04       200
+         good       0.06      0.06      0.06       200
+        happy       0.05      0.05      0.05       200
+      hopeful       0.07      0.07      0.07       200
+       hungry       0.11      0.10      0.11       200
+        loved       0.16      0.17      0.16       200
+         okay       0.06      0.06      0.06       200
+   pissed off       0.19      0.19      0.19       200
+          sad       0.10      0.16      0.13       200
+         sick       0.30      0.33      0.31       200
+       sleepy       0.06      0.06      0.06       200
+   thoughtful       0.06      0.06      0.06       200
+        tired       0.03      0.04      0.03       200
+
+  avg / total       0.07      0.07      0.07      8000
+HashingVectorizer
+python classifyBlogs.py 
+Results for LinearSVC()
+Training time: 126.729315s; Prediction time: 0.226724s
+               precision    recall  f1-score   support
+
+ accomplished       0.19      0.24      0.21       200
+   aggravated       0.08      0.08      0.08       200
+       amused       0.15      0.17      0.16       200
+      annoyed       0.06      0.06      0.06       200
+      anxious       0.09      0.07      0.08       200
+        awake       0.02      0.01      0.02       200
+         blah       0.03      0.02      0.03       200
+        blank       0.07      0.04      0.05       200
+        bored       0.10      0.12      0.11       200
+       bouncy       0.03      0.03      0.03       200
+         busy       0.10      0.10      0.10       200
+         calm       0.03      0.02      0.03       200
+     cheerful       0.03      0.02      0.02       200
+      chipper       0.03      0.01      0.02       200
+         cold       0.14      0.14      0.14       200
+     confused       0.10      0.10      0.10       200
+contemplative       0.05      0.04      0.05       200
+      content       0.03      0.02      0.02       200
+       cranky       0.07      0.04      0.05       200
+        crazy       0.03      0.02      0.02       200
+     creative       0.13      0.13      0.13       200
+      curious       0.12      0.20      0.14       200
+    depressed       0.19      0.28      0.22       200
+      drained       0.04      0.03      0.04       200
+     ecstatic       0.10      0.12      0.11       200
+      excited       0.11      0.17      0.14       200
+    exhausted       0.12      0.12      0.12       200
+   frustrated       0.08      0.07      0.07       200
+         good       0.09      0.07      0.08       200
+        happy       0.06      0.07      0.06       200
+      hopeful       0.09      0.09      0.09       200
+       hungry       0.16      0.14      0.15       200
+        loved       0.20      0.34      0.26       200
+         okay       0.06      0.05      0.06       200
+   pissed off       0.24      0.40      0.30       200
+          sad       0.20      0.28      0.24       200
+         sick       0.27      0.42      0.33       200
+       sleepy       0.10      0.07      0.08       200
+   thoughtful       0.08      0.08      0.08       200
+        tired       0.05      0.03      0.04       200
+
+  avg / total       0.10      0.11      0.10      8000
+HashingVectorizer with unigrams and bigrams
+python classifyBlogs.py 
+Results for LinearSVC()
+Training time: 497.112957s; Prediction time: 0.640095s
+               precision    recall  f1-score   support
+
+ accomplished       0.19      0.24      0.21       200
+   aggravated       0.07      0.07      0.07       200
+       amused       0.10      0.12      0.11       200
+      annoyed       0.05      0.06      0.05       200
+      anxious       0.11      0.09      0.10       200
+        awake       0.05      0.03      0.04       200
+         blah       0.05      0.03      0.04       200
+        blank       0.06      0.04      0.05       200
+        bored       0.12      0.14      0.13       200
+       bouncy       0.04      0.03      0.03       200
+         busy       0.12      0.12      0.12       200
+         calm       0.02      0.01      0.01       200
+     cheerful       0.03      0.02      0.02       200
+      chipper       0.05      0.03      0.04       200
+         cold       0.12      0.12      0.12       200
+     confused       0.12      0.12      0.12       200
+contemplative       0.03      0.03      0.03       200
+      content       0.03      0.02      0.02       200
+       cranky       0.05      0.04      0.04       200
+        crazy       0.06      0.04      0.05       200
+     creative       0.14      0.14      0.14       200
+      curious       0.13      0.20      0.16       200
+    depressed       0.19      0.27      0.22       200
+      drained       0.06      0.04      0.05       200
+     ecstatic       0.15      0.18      0.16       200
+      excited       0.13      0.18      0.16       200
+    exhausted       0.11      0.12      0.12       200
+   frustrated       0.09      0.09      0.09       200
+         good       0.07      0.06      0.06       200
+        happy       0.09      0.10      0.09       200
+      hopeful       0.11      0.10      0.11       200
+       hungry       0.16      0.14      0.15       200
+        loved       0.21      0.34      0.26       200
+         okay       0.07      0.05      0.06       200
+   pissed off       0.25      0.41      0.31       200
+          sad       0.21      0.32      0.25       200
+         sick       0.33      0.46      0.38       200
+       sleepy       0.09      0.07      0.08       200
+   thoughtful       0.07      0.09      0.08       200
+        tired       0.04      0.03      0.03       200
+
+  avg / total       0.10      0.12      0.11      8000
