@@ -1,4 +1,4 @@
-# mood-classification-of-blog-posts
+# Mood Classification of Blog posts
 
 Purpose of the Project
 
