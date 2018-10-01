@@ -17,18 +17,14 @@ On using these features, we&#39;ll annotate the blog data with mood labels, and 
 
 ### Application areas of project
 
-Sentiment analysis has various important applications – in Business Intelligence (to better
-
-understand product feedback and customer experience), politics (in approval ratings), law/policy
-
-making (public opinion on draft laws), psychology and sociology.
+Sentiment analysis has various important applications – in Business Intelligence (to better understand product feedback and customer experience), politics (in approval ratings), law/policy making (public opinion on draft laws), psychology and sociology.
 
 ### List of References
 
-* Mishne, Gilad. &quot;Experiments with mood classification in blog posts.&quot; Proceedings of ACM SIGIR 2005 workshop on stylistic analysis of text for information access. Vol. 19. Citeseer, 2005.
+* Mishne, Gilad. &quot;Experiments with mood classification in blog posts.&quot; _Proceedings of ACM SIGIR 2005 workshop on stylistic analysis of text for information access. Vol. 19. Citeseer, 2005_
 
-* Keshtkar, Fazel, and Diana Inkpen. &quot;Using sentiment orientation features for mood classification in blogs.&quot; Proceedings of the IEEE International Conference on Natural Language Processing and Knowledge Engineering (IEEE NLP-KE 2009). 2009.
+* Keshtkar, Fazel, and Diana Inkpen. &quot;Using sentiment orientation features for mood classification in blogs.&quot; _Proceedings of the IEEE International Conference on Natural Language Processing and Knowledge Engineering (IEEE NLP-KE 2009), 2009_
 
-* Rubin, Victoria L., Jeffrey M. Stanton, and Elizabeth D. Liddy. &quot;Discerning emotions in texts.&quot;The AAAI Symposium on Exploring Attitude and Affect in Text (AAAI-EAAT). 2004.
+* Rubin, Victoria L., Jeffrey M. Stanton, and Elizabeth D. Liddy. &quot;Discerning emotions in texts.&quot;_The AAAI Symposium on Exploring Attitude and Affect in Text (AAAI-EAAT), 2004_
 
-* Holzman, Lars E., and William M. Pottenger. &quot;Classification of emotions in internet chat: An application of machine learning using speech phonemes.&quot; Retrieved November 27.2011 (2003):50.
+* Holzman, Lars E., and William M. Pottenger. &quot;Classification of emotions in internet chat: An application of machine learning using speech phonemes.&quot; _Retrieved November 27.2011 (2003):50_
